@@ -1,3 +1,23 @@
 <resources>
-    <string name="app_name">LuckyFinalProject-MeixuanL&amp;YanyingL</string>
+    <string name="app_name">Quiz</string>
+
+    <string name="question_1">Apple is a computer</string>
+    <string name="question_2">Banana is a computer</string>
+    <string name="question_3">Cats like fishes</string>
+    <string name="question_4">Cats know how to catch fish</string>
+    <string name="question_5">Cats can swim</string>
+    <string name="question_6">Cats can climb trees</string>
+
+    <string name="true_button">True</string>
+    <string name="false_button">False</string>
+    <string name="next_button">Next</string>
+    <string name="correct_toast">Correct</string>
+    <string name="incorrect_toast">Incorrect</string>
+
+    <string name="warning_text">Are you sure you want to do this?</string>
+    <string name="show_answer_button">Show Answer</string>
+    <string name="cheat_button">Cheat!</string>
+    <string name="judgement_text">Cheat is wrong</string>
+
+
 </resources>
