@@ -41,9 +41,9 @@ public class AnimalList extends AppCompatActivity {
 
     private void initialData() {
         persons = new ArrayList<>();
-        persons.add(new Person("Fingerprints", "The fingerprints of a koala are so indistinguishable from humans that they have on occasion been confused at a crime scene.",R.drawable.koalafingerprints));
-        persons.add(new Person("Sleeping", "Koalas Sleep Up to 22 Hours a Day.", R.drawable.koalasleep));
-        persons.add(new Person("Eat A Lot", "An adult koala eats about 1/2 - 1 kilogram of leaves each night.",R.drawable.koalaeats));
-        persons.add(new Person("Baby(Joey)", "Baby Koalas are known as ‘Joeys'. The Joey stays in its mother’s pouch for about 6 or 7 months, drinking only milk. ",R.drawable.koalababy));
+        persons.add(new Person("Born", "Rabbits are born with their eyes closed and without fur.",R.drawable.nofur));
+        persons.add(new Person("Binky", "A bunny will hop when it's happy and do a twist in mid-air. This adorable action has an equally adorable name: It's called a binky.", R.drawable.bunky));
+        persons.add(new Person("360 Degree vision", "Rabbits' vision covers nearly 360 degrees.",R.drawable.rabbit1));
+        persons.add(new Person("Stay Cool", " The oversized ears have the added benefit of cooling rabbits down on a hot day.",R.drawable.rabbitear));
     }
 }

@@ -43,9 +43,9 @@ public class prairiedog_recyclerview extends AppCompatActivity {
 
     private void initialData() {
         prairiedogs = new ArrayList<>();
-        prairiedogs.add(new prairiedogs("Vocabulary", "Their vocabulary is more advanced than any other animal language that’s been decoded.", R.drawable.vocabulary));
-        prairiedogs.add(new prairiedogs("Kissing", "Prairie dogs say hello by kissing.", R.drawable.kissing));
-        prairiedogs.add(new prairiedogs("Well-organized home", "Prairie dogs live in complex underground burrows with designated areas for nurseries, sleeping and toilets.", R.drawable.home));
-        prairiedogs.add(new prairiedogs("Name", "They are named for their habitat and warning call, which sounds similar to a dog‘s bark.", R.drawable.sound));
+        prairiedogs.add(new prairiedogs("White Spots", "Most deer are born with white spots but lose them within a year.", R.drawable.whitespots));
+        prairiedogs.add(new prairiedogs("First Step", "Deer take their first steps within half an hour of their birth.", R.drawable.babydeer));
+        prairiedogs.add(new prairiedogs("Mating Season", "During the mating season male deer will often use their antlers to fight for the attention of female deer.", R.drawable.deerfight));
+        prairiedogs.add(new prairiedogs("Antlers", "Deer are the only group of animals in the world to have antlers. Antlers are the fastest growing living tissue in the world!", R.drawable.alters));
     }
 }

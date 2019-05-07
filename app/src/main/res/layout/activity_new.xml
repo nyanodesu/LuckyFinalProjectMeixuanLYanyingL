@@ -12,7 +12,7 @@
             android:layout_height="0dp"
             android:layout_gravity="center"
             android:layout_weight="4"
-            android:src="@drawable/koala"
+            android:src="@drawable/rabbit"
             />
 
         <TextView
@@ -21,7 +21,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:textSize="30sp"
-            android:text="Koala"
+            android:text="Rabbit"
             android:layout_gravity="center"
             />
 
@@ -31,7 +31,7 @@
             android:layout_height="0dp"
             android:layout_gravity="center"
             android:layout_weight="4"
-            android:src="@drawable/prairie_dogs"
+            android:src="@drawable/dear"
             />
 
         <TextView
@@ -41,7 +41,7 @@
             android:layout_weight="1"
             android:textSize="30sp"
             android:layout_gravity="center"
-            android:text="Prairie Dog"
+            android:text="Deer"
             />
 
     <ImageView

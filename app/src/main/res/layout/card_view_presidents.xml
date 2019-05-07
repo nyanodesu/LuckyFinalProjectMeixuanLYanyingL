@@ -20,7 +20,7 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginRight="16dp"
-            tools:src="@drawable/koalafingerprints"
+            tools:src="@drawable/rabbit1"
             />
 
         <TextView
