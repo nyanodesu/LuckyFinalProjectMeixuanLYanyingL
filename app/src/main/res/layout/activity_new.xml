@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NewActivity">
+
+        <ImageView
+            android:id="@+id/animal_1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            android:src="@drawable/koala"
+            />
+
+        <TextView
+            android:id="@+id/animal_name1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textSize="30sp"
+            android:text="Koala"
+            android:layout_gravity="center"
+            />
+
+        <ImageView
+            android:id="@+id/animal_2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            android:src="@drawable/prairie_dogs"
+            />
+
+        <TextView
+            android:id="@+id/animal_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textSize="30sp"
+            android:layout_gravity="center"
+            android:text="Prairie Dog"
+            />
+
+    <ImageView
+        android:id="@+id/animal_3"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="4"
+        android:src="@drawable/cat"
+        />
+
+    <TextView
+        android:id="@+id/animal_name3"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:text="Cat"
+        />
+
+    <Button
+        android:id="@+id/backtomain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="back"/>
+
+</LinearLayout>
+

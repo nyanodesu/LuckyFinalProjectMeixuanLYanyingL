@@ -19,10 +19,11 @@ public class quiz_main_activity extends AppCompatActivity {
     private Button mNextButton;
     private Button mCheatButton;
     public static final int REQUEST_CODE_CHEAR=0;
+ //   public int correctNumber=0;
 
     private Question[] sQuestionbank =new Question[]{
-            new Question(R.string.question_1,true),
-            new Question(R.string.question_2,false),
+            new Question(R.string.question_1,false),
+            new Question(R.string.question_2,true),
             new Question(R.string.question_3,true),
             new Question(R.string.question_4,true),
             new Question(R.string.question_5,false),
@@ -32,11 +33,10 @@ public class quiz_main_activity extends AppCompatActivity {
     private int mCurrentIndex=0;
     private boolean mIsCheater;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.quiz_main);
 
         mCheatButton=(Button)findViewById(R.id.cheat_button);
         mCheatButton.setOnClickListener(new View.OnClickListener() {
@@ -110,6 +110,7 @@ public class quiz_main_activity extends AppCompatActivity {
         } else {
             if (userPressedTrue == userIsTrue) {
                 messageResID = R.string.correct_toast;
+               // correctNumber++;
             } else {
                 messageResID = R.string.incorrect_toast;
             }

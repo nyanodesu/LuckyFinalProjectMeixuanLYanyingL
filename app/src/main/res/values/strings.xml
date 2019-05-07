@@ -1,12 +1,12 @@
 <resources>
-    <string name="app_name">Quiz</string>
+    <string name="app_name">final</string>
 
-    <string name="question_1">Apple is a computer</string>
-    <string name="question_2">Banana is a computer</string>
-    <string name="question_3">Cats like fishes</string>
-    <string name="question_4">Cats know how to catch fish</string>
-    <string name="question_5">Cats can swim</string>
-    <string name="question_6">Cats can climb trees</string>
+    <string name="question_1">Cats Meow to each other</string>
+    <string name="question_2">Koala sleep nearly 22 hours everyday</string>
+    <string name="question_3">A cat’s nose is as unique as a human’s fingerprint</string>
+    <string name="question_4">Prairie dogs say hello by kissing.</string>
+    <string name="question_5">Cats can taste sweetness.</string>
+    <string name="question_6">Baby Koalas are known as Joeys.</string>
 
     <string name="true_button">True</string>
     <string name="false_button">False</string>
@@ -19,14 +19,5 @@
     <string name="cheat_button">Cheat!</string>
     <string name="judgement_text">Cheat is wrong</string>
 
-        <string name="pic1_name">Denis</string>
-        <string name="pic2_name">John</string>
-        <string name="pic3_name">Xiong</string>
-
-        <string name="pic1_description">Long Walk</string>
-        <string name="pic2_description">See you!!!</string>
-        <string name="pic3_description">Good Morning</string>
-
-
-    </resources>
+</resources>
 
