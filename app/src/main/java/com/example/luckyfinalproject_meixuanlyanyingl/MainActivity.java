@@ -11,6 +11,9 @@ public class MainActivity extends AppCompatActivity {
 
     public Button click;
     public Button clicktoQuiz;
+    private Button login;
+    private Button Signup;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
 
 
     }

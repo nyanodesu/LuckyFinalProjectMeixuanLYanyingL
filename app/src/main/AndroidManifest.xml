@@ -9,13 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".cat_recyclerview"></activity>
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".cat_recyclerview" />
         <activity android:name=".prairiedog_recyclerview" />
         <activity android:name=".quiz_main_activity" />
         <activity android:name=".quiz_answer_activity" />
         <activity android:name=".AnimalList" />
-        <activity android:name=".NewActivity"/>
-        <activity android:name=".MainActivity">
+        <activity android:name=".NewActivity" />
+        <activity android:name=".Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
