@@ -1,6 +1,19 @@
 <resources>
     <string name="app_name">Doctor Animal</string>
     <string name="welcome">Welcome! Please login or sign up: </string>
+    <string name="login_button">login</string>
+    <string name="register_button">register</string>
+    <string name="back_button">back</string>
+    <string name="signup_button">sign up</string>
+    <string name="logout_button">log out</string>
+    <string name="clear_button">clear</string>
+    <string name="create_name_edit_text">Please type in your name here</string>
+    <string name="create_email_edit_text">Please type in your email here, this is going to be your login username</string>
+    <string name="create_password_edit_text">Please type in your password here</string>
+
+    <string name="profile_button">profile</string>
+
+    <string name="meet_animals_button">meet animals</string>
 
     <string name="question_1">Cats Meow to each other</string>
     <string name="question_2">Koala sleep nearly 22 hours everyday</string>

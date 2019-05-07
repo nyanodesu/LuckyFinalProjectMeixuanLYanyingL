@@ -55,20 +55,10 @@ public class Login extends AppCompatActivity {
 
     }
 
-    public void signup(View view){
-        username = usernameEditText.getText().toString();
-        password = passwordEditText.getText().toString();
-
-        mAuth.createUserWithEmailAndPassword(username,password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-            @Override
-            public void onComplete(@NonNull Task<AuthResult> task) {
-                if(!task.isSuccessful()){
-                    Toast.makeText(Login.this,task.getException().toString(),Toast.LENGTH_SHORT).show();
-                }else{
-                    Toast.makeText(Login.this,task.getResult().getUser().getEmail()+"signed up successful",Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(Login.this,MainActivity.class));
-                }
-            }
-        });
+    public void register(View view){
+        Intent intent=new Intent(Login.this,Register.class);
+        startActivity(intent);
     }
+
+
 }
