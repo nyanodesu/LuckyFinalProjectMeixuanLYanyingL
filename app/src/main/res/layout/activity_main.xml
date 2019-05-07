@@ -2,18 +2,22 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/profile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Meowmeowmoew3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/profile_button"/>
+
+    <Button
+        android:id="@+id/meet_animals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/meet_animals_button"/>
 
     <Button
         android:id="@+id/click"
@@ -26,5 +30,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="clicktoquiz"/>
+
+    <Button
+        android:id="@+id/log_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="log out"/>
+
 
 </LinearLayout>
