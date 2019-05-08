@@ -55,4 +55,6 @@
     <string name="prainfo2">鹿在出生后半小时内会迈出他们的第一步</string>
     <string name="prainfo3">在交配的季节，雄性鹿会用鹿角打架来博得雌性鹿的注意</string>
     <string name="prainfo4">鹿是世界上唯一一个有鹿角的动物，鹿角是世界上生长最快的组织</string>
+    <string name="clicktoanimal_button">动物百科</string>
+    <string name="clicktoquiz_button">小测验</string>
 </resources>

@@ -55,6 +55,8 @@
     <string name="prainfo1">Most deer are born with white spots but lose them within a year.</string>
 
     <string name="true_button">True</string>
+    <string name="clicktoanimal_button">Click To Animal</string>
+    <string name="clicktoquiz_button">Click To Quiz</string>
     <string name="false_button">False</string>
     <string name="next_button">Next</string>
     <string name="correct_toast">Correct</string>

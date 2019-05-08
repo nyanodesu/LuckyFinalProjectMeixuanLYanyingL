@@ -16,7 +16,7 @@
         android:id="@+id/click"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="clicktoAnimal"
+        android:text="@string/clicktoanimal_button"
         android:layout_margin="10dp"
         android:background="@color/button"/>
 
@@ -24,7 +24,7 @@
         android:id="@+id/clicktoquiz"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="clicktoquiz"
+        android:text="@string/clicktoquiz_button"
         android:layout_margin="10dp"
         android:background="@color/button"/>
 
