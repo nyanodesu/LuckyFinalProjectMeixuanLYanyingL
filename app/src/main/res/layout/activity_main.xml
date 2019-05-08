@@ -2,35 +2,68 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/background"
+    android:layout_margin="5dp"
     tools:context=".MainActivity">
 
-
-    <Button
-        android:id="@+id/meet_animals"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/meet_animals_button"/>
-
-    <Button
-        android:id="@+id/click"
+        android:text="@string/app_name"
+        android:textSize="50dp"
+        android:layout_margin="10dp"/>
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="clicktoAnimal"/>
+        android:text="@string/welcome"
+        android:textSize="20dp"
+        android:layout_margin="10dp"/>
+
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email/Username"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_margin="10dp"/>
 
     <Button
-        android:id="@+id/clicktoquiz"
-        android:layout_width="wrap_content"
+        android:id="@+id/log_in"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="clicktoquiz"/>
+        android:text="login"
+        android:onClick="login"
+        android:layout_margin="10dp"
+        android:background="@color/button"/>
 
     <Button
-        android:id="@+id/log_out"
-        android:layout_width="wrap_content"
+        android:id="@+id/signup_button"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="log out"/>
+        android:text="@string/signup_button"
+        android:onClick="signup"
+        android:layout_margin="10dp"
+        android:background="@color/button"/>
+
+    <Button
+        android:id="@+id/clear_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/clear_button"
+        android:onClick="clear"
+        android:layout_margin="10dp"
+        android:background="@color/button"/>
 
 
 </LinearLayout>

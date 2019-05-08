@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:layout_margin="5dp"
+    tools:context=".Menu">
+
+
+
+    <Button
+        android:id="@+id/click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="clicktoAnimal"
+        android:layout_margin="10dp"
+        android:background="@color/button"/>
+
+    <Button
+        android:id="@+id/clicktoquiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="clicktoquiz"
+        android:layout_margin="10dp"
+        android:background="@color/button"/>
+
+    <Button
+        android:id="@+id/meet_animals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/meet_animals_button"
+        android:layout_margin="10dp"
+        android:background="@color/button"/>
+
+    <Button
+        android:id="@+id/log_out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="log out"
+        android:onClick="logOut"
+        android:layout_margin="10dp"
+        android:background="@color/button"/>
+
+
+</LinearLayout>

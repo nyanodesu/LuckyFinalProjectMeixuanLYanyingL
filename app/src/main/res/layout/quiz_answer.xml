@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/background"
     android:gravity="center"
     tools:context=".quiz_answer_activity">
 
@@ -13,7 +14,8 @@
         android:layout_height="wrap_content"
         android:text="@string/warning_text"
         android:layout_marginBottom="16dp"
-        android:textSize="16sp"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
         />
 
     <TextView
@@ -22,13 +24,16 @@
         android:layout_height="wrap_content"
         android:text="Answer"
         android:layout_marginBottom="16dp"
-        android:textSize="16sp"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
         />
 
     <Button
         android:id="@+id/show_answer_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/true_button" />
+        android:text="yes"
+        android:layout_margin="10dp"
+        android:background="@color/button"/>
 
 </LinearLayout>
