@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.Company.MeetAnimals.UnityPlayerActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -23,6 +24,7 @@ public class Login extends AppCompatActivity {
     private EditText passwordEditText;
     private Button logIn;
     private Button signUp;
+    Button MA;
     private FirebaseAuth mAuth;
     private String username,password;
 
@@ -35,7 +37,14 @@ public class Login extends AppCompatActivity {
         passwordEditText = (EditText) findViewById(R.id.password);
         logIn = (Button) findViewById(R.id.log_in);
         mAuth = FirebaseAuth.getInstance();
-
+        MA = (Button) findViewById(R.id.MA_button);
+        MA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(Login.this, UnityPlayerActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     public void login(View view){
