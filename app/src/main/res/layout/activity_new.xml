@@ -21,7 +21,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:textSize="30sp"
-            android:text="Rabbit"
+            android:text="@string/rabbit"
             android:layout_gravity="center"
             />
 
@@ -41,7 +41,7 @@
             android:layout_weight="1"
             android:textSize="30sp"
             android:layout_gravity="center"
-            android:text="Deer"
+            android:text="@string/deer"
             />
 
     <ImageView
@@ -67,7 +67,7 @@
         android:id="@+id/backtomain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="back"/>
+        android:text="@string/cat"/>
 
 </LinearLayout>
 

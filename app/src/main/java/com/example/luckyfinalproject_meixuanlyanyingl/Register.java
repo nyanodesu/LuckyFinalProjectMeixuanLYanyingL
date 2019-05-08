@@ -23,15 +23,12 @@ public class Register extends AppCompatActivity {
     private EditText createNameEditText;
     private EditText createEmailEditText;
     private EditText createPasswordEditText;
+    public Button signupButton;
     public FirebaseAuth mAuth;
-    private String email,password;
+    public String email,password;
 
     public FirebaseDatabase database = FirebaseDatabase.getInstance();
     public DatabaseReference myRef = database.getReference("userInfo");
-
-
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,8 +37,15 @@ public class Register extends AppCompatActivity {
         createNameEditText = (EditText)findViewById(R.id.create_name);
         createEmailEditText = (EditText) findViewById(R.id.create_email);
         createPasswordEditText = (EditText) findViewById(R.id.create_password);
+        signupButton=(Button)findViewById(R.id.signup);
 
-    }
+        signupButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                signup(v);
+            }
+        });
+        }
 
     public void signup(View view){
         email = createEmailEditText.getText().toString();
@@ -58,9 +62,6 @@ public class Register extends AppCompatActivity {
                 }
             }
         });
-        Random rn = new Random();
-        int i = rn.nextInt(2 - 0 + 1) + 0;
-        myRef.setValue(new userInfo(createNameEditText.getText().toString(),i));
     }
 
     public void clear(View view){

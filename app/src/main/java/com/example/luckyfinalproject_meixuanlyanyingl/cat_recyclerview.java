@@ -42,9 +42,9 @@ public class cat_recyclerview extends AppCompatActivity {
 
     private void initialData() {
         cats = new ArrayList<>();
-        cats.add(new cats("Meow", "Cats don't meow as a way to communicate with each other. It's a method they use for getting attention from human.",R.drawable.meow));
-        cats.add(new cats("Eyelids", "Cats have 3 eyelids.", R.drawable.eyelids));
-        cats.add(new cats("Nose", "A cat’s nose is as unique as a human’s fingerprint.",R.drawable.nose));
-       cats.add(new cats("Taste", "Cats are believed to be the only mammals who don't taste sweetness.",R.drawable.taste));
+        cats.add(new cats(getString(R.string.catTitle1), getString(R.string.catinfo1),R.drawable.meow));
+        cats.add(new cats(getString(R.string.catTitle2), getString(R.string.catinfo2), R.drawable.eyelids));
+        cats.add(new cats(getString(R.string.catTitle3), getString(R.string.catinfo3),R.drawable.nose));
+       cats.add(new cats(getString(R.string.catTitle4), getString(R.string.catinfo4),R.drawable.taste));
     }
     }

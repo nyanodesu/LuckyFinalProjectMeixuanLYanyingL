@@ -41,9 +41,9 @@ public class AnimalList extends AppCompatActivity {
 
     private void initialData() {
         persons = new ArrayList<>();
-        persons.add(new Person("Born", "Rabbits are born with their eyes closed and without fur.",R.drawable.nofur));
-        persons.add(new Person("Binky", "A bunny will hop when it's happy and do a twist in mid-air. This adorable action has an equally adorable name: It's called a binky.", R.drawable.bunky));
-        persons.add(new Person("360 Degree vision", "Rabbits' vision covers nearly 360 degrees.",R.drawable.rabbit1));
-        persons.add(new Person("Stay Cool", " The oversized ears have the added benefit of cooling rabbits down on a hot day.",R.drawable.rabbitear));
+        persons.add(new Person(getString(R.string.rabbitTitle1),getString(R.string.rabbitinfo1),R.drawable.nofur));
+        persons.add(new Person(getString(R.string.rabbitTitle2), getString(R.string.rabbitinfo2), R.drawable.bunky));
+        persons.add(new Person(getString(R.string.rabbitTitle3), getString(R.string.rabbitinfo3),R.drawable.rabbit1));
+        persons.add(new Person(getString(R.string.rabbitTitle4), getString(R.string.rabbitinfo4),R.drawable.rabbitear));
     }
 }

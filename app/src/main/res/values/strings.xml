@@ -22,6 +22,38 @@
     <string name="question_5">Cats can taste sweetness.</string>
     <string name="question_6">Rabbits’vision covers nearly 360 degrees.</string>
 
+    <string name="rabbitTitle1">Born</string>
+    <string name="rabbitTitle2">Binky</string>
+    <string name="rabbitTitle3">360 degree vision</string>
+    <string name="rabbitTitle4">Stay Cool</string>
+    <string name="rabbitinfo1">Rabbits are born with their eyes closed and without fur</string>
+    <string name="rabbitinfo2">A bunny will hop when it’s happy and do a twist in mid-air. This adorable action has an equally adorable name: It’s called a binky</string>
+    <string name="rabbitinfo3">Rabbits’ vision covers nearly 360 degrees.</string>
+    <string name="rabbitinfo4">The oversized ears have the added benefit of cooling rabbits down on a hot day.</string>
+
+
+    <string name="rabbit">Rabbit</string>
+    <string name="deer">Deer</string>
+    <string name="cat">Cat</string>
+
+    <string name="catTitle1">Meow</string>
+    <string name="catTitle2">Eyelids</string>
+    <string name="catTitle3">Nose</string>
+    <string name="catTitle4">Taste</string>
+    <string name="catinfo4">Cats are believed to be the only mammals who don’t taste sweetness.</string>
+    <string name="catinfo3">A cat’s nose is as unique as a human’s fingerprint.</string>
+    <string name="catinfo2">Cats have 3 eyelids.</string>
+    <string name="catinfo1">Cats don’t meow as a way to communicate with each other. It’s a method they use for getting attention from human.</string>
+
+    <string name="praTitle1">White spots</string>
+    <string name="praTitle2">First Step</string>
+    <string name="praTitle3">Mating Season</string>
+    <string name="praTitle4">Antlers</string>
+    <string name="prainfo4">"Deer are the only group of animals in the world to have antlers. Antlers are the fastest growing living tissue in the world!"</string>
+    <string name="prainfo3">"During the mating season male deer will often use their antlers to fight for the attention of female deer.</string>
+    <string name="prainfo2">Deer take their first steps within half an hour of their birth.</string>
+    <string name="prainfo1">Most deer are born with white spots but lose them within a year.</string>
+
     <string name="true_button">True</string>
     <string name="false_button">False</string>
     <string name="next_button">Next</string>

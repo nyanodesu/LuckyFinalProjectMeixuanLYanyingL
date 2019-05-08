@@ -43,9 +43,9 @@ public class prairiedog_recyclerview extends AppCompatActivity {
 
     private void initialData() {
         prairiedogs = new ArrayList<>();
-        prairiedogs.add(new prairiedogs("White Spots", "Most deer are born with white spots but lose them within a year.", R.drawable.whitespots));
-        prairiedogs.add(new prairiedogs("First Step", "Deer take their first steps within half an hour of their birth.", R.drawable.babydeer));
-        prairiedogs.add(new prairiedogs("Mating Season", "During the mating season male deer will often use their antlers to fight for the attention of female deer.", R.drawable.deerfight));
-        prairiedogs.add(new prairiedogs("Antlers", "Deer are the only group of animals in the world to have antlers. Antlers are the fastest growing living tissue in the world!", R.drawable.alters));
+        prairiedogs.add(new prairiedogs(getString(R.string.praTitle1), getString(R.string.prainfo1), R.drawable.whitespots));
+        prairiedogs.add(new prairiedogs(getString(R.string.praTitle2), getString(R.string.prainfo2), R.drawable.babydeer));
+        prairiedogs.add(new prairiedogs(getString(R.string.praTitle3), getString(R.string.prainfo3), R.drawable.deerfight));
+        prairiedogs.add(new prairiedogs(getString(R.string.praTitle4), getString(R.string.prainfo4), R.drawable.alters));
     }
 }

@@ -38,11 +38,11 @@
         android:onClick="login"/>
 
     <Button
-        android:id="@+id/register_button"
-        android:layout_width="wrap_content"
+        android:id="@+id/siguup_button"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="register"
-        android:onClick="register"/>
+        android:text="@string/signup_button"
+        android:onClick="signup"/>
 
 
 </LinearLayout>

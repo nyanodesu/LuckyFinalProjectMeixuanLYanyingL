@@ -13,6 +13,8 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class Login extends AppCompatActivity {
 
@@ -23,6 +25,15 @@ public class Login extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private String username,password;
 
+    private EditText createNameEditText;
+    private EditText createEmailEditText;
+    private EditText createPasswordEditText;
+    public Button signupButton;
+    public String email;
+
+    public FirebaseDatabase database = FirebaseDatabase.getInstance();
+    public DatabaseReference myRef = database.getReference("userInfo");
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,7 +43,6 @@ public class Login extends AppCompatActivity {
         passwordEditText = (EditText) findViewById(R.id.password);
         logIn = (Button) findViewById(R.id.log_in);
         mAuth = FirebaseAuth.getInstance();
-
     }
 
     public void login(View view){
@@ -52,7 +62,6 @@ public class Login extends AppCompatActivity {
                         }
                     }
                 });
-
     }
 
     public void register(View view){
@@ -60,5 +69,26 @@ public class Login extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void signup(View view){
+        email = createEmailEditText.getText().toString();
+        password = createPasswordEditText.getText().toString();
 
+        mAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+                if(!task.isSuccessful()){
+                    Toast.makeText(Login.this,task.getException().toString(),Toast.LENGTH_SHORT).show();
+                }else{
+                    Toast.makeText(Login.this,task.getResult().getUser().getEmail()+"signed up successful",Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(Login.this,Login.class));
+                }
+            }
+        });
+    }
+
+    public void clear(View view){
+        createNameEditText.setText("");
+        createPasswordEditText.setText("");
+        createEmailEditText.setText("");
+    }
 }
