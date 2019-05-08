@@ -4,17 +4,19 @@ import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.Company.MeetAnimals.UnityPlayerActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.Random;
 
 public class Login extends AppCompatActivity {
 
@@ -22,17 +24,9 @@ public class Login extends AppCompatActivity {
     private EditText passwordEditText;
     private Button logIn;
     private Button signUp;
+    Button MA;
     private FirebaseAuth mAuth;
     private String username,password;
-
-    private EditText createNameEditText;
-    private EditText createEmailEditText;
-    private EditText createPasswordEditText;
-    public Button signupButton;
-    public String email;
-
-    public FirebaseDatabase database = FirebaseDatabase.getInstance();
-    public DatabaseReference myRef = database.getReference("userInfo");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +37,14 @@ public class Login extends AppCompatActivity {
         passwordEditText = (EditText) findViewById(R.id.password);
         logIn = (Button) findViewById(R.id.log_in);
         mAuth = FirebaseAuth.getInstance();
+        MA = (Button) findViewById(R.id.MA_button);
+        MA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(Login.this, UnityPlayerActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     public void login(View view){
@@ -62,18 +64,14 @@ public class Login extends AppCompatActivity {
                         }
                     }
                 });
-    }
 
-    public void register(View view){
-        Intent intent=new Intent(Login.this,Register.class);
-        startActivity(intent);
     }
 
     public void signup(View view){
-        email = createEmailEditText.getText().toString();
-        password = createPasswordEditText.getText().toString();
+        username = usernameEditText.getText().toString();
+        password = passwordEditText.getText().toString();
 
-        mAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+        mAuth.createUserWithEmailAndPassword(username,password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(!task.isSuccessful()){
@@ -84,11 +82,13 @@ public class Login extends AppCompatActivity {
                 }
             }
         });
+
     }
 
     public void clear(View view){
-        createNameEditText.setText("");
-        createPasswordEditText.setText("");
-        createEmailEditText.setText("");
+        usernameEditText.setText("");
+        passwordEditText.setText("");
     }
+
+
 }

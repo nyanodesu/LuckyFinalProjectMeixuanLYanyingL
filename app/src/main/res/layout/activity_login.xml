@@ -38,11 +38,24 @@
         android:onClick="login"/>
 
     <Button
-        android:id="@+id/siguup_button"
-        android:layout_width="match_parent"
+        android:id="@+id/signup_button"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/signup_button"
         android:onClick="signup"/>
+
+    <Button
+        android:id="@+id/clear_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clear_button"
+        android:onClick="clear"/>
+
+    <Button
+        android:id="@+id/MA_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clear_button" />
 
 
 </LinearLayout>
